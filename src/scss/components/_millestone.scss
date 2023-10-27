@@ -1,0 +1,62 @@
+.section-millestone {
+    padding-block: 120px;
+	.container {
+		&-millestone {
+			@include flex(column, center, center);
+            gap: 160px;
+			.card-items {
+				@include flex(row, center, space-between);
+				gap: 8px;
+				.card {
+					position: relative;
+					&-content {
+						position: absolute;
+						bottom: 32px;
+						left: 32px;
+						max-width: 231px;
+						.content {
+							&-icon {
+								max-width: 56px;
+								margin-bottom: 24px;
+							}
+							&-title {
+								color: $white;
+								font-family: $font-body;
+								font-size: 32px;
+								font-weight: 400;
+								line-height: 120%; /* 38.4px */
+								letter-spacing: -0.64px;
+								margin-bottom: 32px;
+							}
+						}
+					}
+				}
+			}
+			.body-content {
+				@include flex(row, flex-start, center);
+				gap: 150px;
+				.subtext {
+					max-width: 334px;
+					@include flex(column, flex-start, flex-start);
+					gap: 120px;
+					&-desc {
+						color: $gray;
+						font-family: $font-body;
+						font-size: 20px;
+						font-weight: 500;
+						line-height: 132%; /* 26.4px */
+						letter-spacing: -0.2px;
+					}
+					&-count {
+						color: $black;
+						font-family: $font-display;
+						font-size: 120px;
+						font-weight: 400;
+						line-height: 110%; /* 132px */
+						letter-spacing: -2.4px;
+					}
+				}
+			}
+		}
+	}
+}

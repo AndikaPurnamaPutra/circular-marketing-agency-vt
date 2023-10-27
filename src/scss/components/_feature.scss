@@ -1,0 +1,52 @@
+.section-feature {
+	padding-block: 100px;
+	.container {
+		&-feature {
+			.feature {
+				width: 100%;
+				&-item {
+					@include flex(row, center, space-between);
+					padding-block: 60px;
+                    cursor: pointer;
+					&:not(:last-child) {
+						border-bottom: 1px solid $gray;
+					}
+					.subtext-text {
+						@include flex(row, center, space-between);
+						width: 1064px;
+						&-display {
+							color: $black;
+							font-family: $font-display;
+							font-size: 72px;
+							font-weight: 400;
+							line-height: 120%; /* 86.4px */
+							letter-spacing: -1.44px;
+							width: 552px;
+						}
+						&-desc {
+							color: $gray;
+							font-family: $font-body;
+							font-size: 20px;
+							font-weight: 500;
+							line-height: 132%; /* 26.4px */
+							letter-spacing: -0.2px;
+							width: 433px;
+						}
+					}
+                    .btn-icon {
+                        transition: all 300ms ease;
+                    }
+					&:hover {
+						.btn-icon {
+							transform: rotate(-70deg);
+                            svg path {
+                                fill: #A1D0D9;
+                                opacity: 1;
+                            }
+						}
+					}
+				}
+			}
+		}
+	}
+}

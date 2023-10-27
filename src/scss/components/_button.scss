@@ -1,0 +1,33 @@
+.btn {
+	padding: 10px 20px;
+	border-color: transparent;
+	border-radius: 100px;
+	color: $white;
+	text-align: center;
+	font-family: $font-body;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%; /* 27.2px */
+	background-color: transparent;
+	text-align: center;
+	display: inline-flex;
+	align-items: center;
+	&-link {
+		justify-content: center;
+		gap: 24px;
+		padding: 0;
+	}
+	&-icon {
+		padding: 0;
+	}
+	// &-secondary{
+	//     background-color: $secondary;
+	//     color: $white;
+	// }
+	// &-primary{
+	//     @extend .btn-secondary;
+	//     background-color: $primary;
+	//     color: $black;
+	// }
+}
