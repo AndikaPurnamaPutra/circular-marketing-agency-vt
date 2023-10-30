@@ -4,6 +4,10 @@
 	overflow: hidden;
     background-color: $primary;
     padding-block: 60px;
+	@include responsive(md) {
+		max-width: 800px;
+		padding-block: 30px;
+	}
 	.running {
 		width: 2000px;
 		@include flex(row, center, center !important);
@@ -18,6 +22,10 @@
             transform: translateX(-100%);
             }
         };
+		@include responsive(md) {
+			width: 900px;
+			animation-duration: 15s;
+		}
 		&-wrapper {
 			@include flex(row, center, center);
 			width: auto;
@@ -35,6 +43,15 @@
                     &.text-secondary {
                         font-style: italic;
                     }
+					@include responsive(xl) {
+						font-size: 136px;
+					}
+					@include responsive(md) {
+						font-size: 102px;
+					}
+					@include responsive(sm) {
+						font-size: 72px;
+					}
 				}
 			}
 		}

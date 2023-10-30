@@ -12,13 +12,31 @@
 	@include responsive(xxxl) {
 		background-position: -2.5% 60%;
 	}
+	@include responsive(xxl) {
+		background-size: cover;
+		background-position: 192px 60%;
+	}
+	@include responsive(md) {
+		padding-top: 90px;
+		padding-bottom: 30px;
+	}
+	@include responsive(sm) {
+		background-image: none;
+	}
 	.container {
 		&-header {
 			position: relative;
 			.subtext {
+				@include responsive(md) {
+					@include flex(column, flex-start,flex-start);
+					gap: 16px;
+				}
 				&-text {
 					@include flex(column, flex-start, space-between);
 					gap: 26px;
+					@include responsive(md){
+						gap: 16px;
+					}
 					&-display {
 						color: $primary;
 						font-family: $font-display;
@@ -26,10 +44,36 @@
 						font-weight: 400;
 						line-height: 98%; /* 192.08px */
 						letter-spacing: -7.84px;
-						span {
+						@include responsive(xl) {
+							font-size: 136px;
+						}
+						@include responsive(md) {
+							font-size: 104px;
+							letter-spacing: -4.84px;
+						}
+						@include responsive(sm) {
+							font-size: 54px;
+							letter-spacing: -2.84px;
+						}
+						.btn-icon {
 							margin-left: 62px;
+							@include responsive(md) {
+								margin-left: 28px;
+							}
+							@include responsive(sm) {
+								margin-left: 0;
+							}
 							img {
 								max-width: 119px;
+								@include responsive(xl) {
+									max-width: 92px;
+								}
+								@include responsive(md) {
+									max-width: 74px;
+								}
+								@include responsive(sm) {
+									max-width: 32px;
+								}
 							}
 						}
 					}
@@ -40,6 +84,9 @@
 						font-weight: 500;
 						line-height: 110%; /* 22px */
 						letter-spacing: 1px;
+						@include responsive(md) {
+							font-size: 16px;
+						} 
 					}
 					&-desc {
 						color: $white;
@@ -52,11 +99,29 @@
 						top: 30px;
 						right: 192px;
 						max-width: 159px;
+						@include responsive(xl) {
+							right: 126px;
+						}
+						@include responsive(md) {
+							position: relative;
+							top: 0;
+							right: 0;
+							max-width: 100%;
+							font-size: 16px;
+						}
 					}
 					.wrapper {
 						display: flex;
 						justify-content: space-between;
 						width: 960px;
+						@include responsive(xl) {
+							width: 628px;
+						}
+						@include responsive(md) {
+							width: 100%;
+							flex-direction: column;
+							gap: 16px;
+						}
 					}
 				}
 			}

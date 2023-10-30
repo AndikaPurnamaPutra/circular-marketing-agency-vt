@@ -13,7 +13,7 @@ $grid-columns: 12;
 // .grid-12 for 100%
 [class^='grid-'] {
     @include responsive(md){
-        width: 100%;
+        width: 100% !important;
     }
   }
   

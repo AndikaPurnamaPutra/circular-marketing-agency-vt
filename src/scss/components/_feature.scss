@@ -1,5 +1,8 @@
 .section-feature {
 	padding-block: 100px;
+	@include responsive(md) {
+		padding-block: 50px;
+	}
 	.container {
 		&-feature {
 			.feature {
@@ -7,13 +10,33 @@
 				&-item {
 					@include flex(row, center, space-between);
 					padding-block: 60px;
+					@include responsive(md) {
+						padding-block: 30px;
+					}
                     cursor: pointer;
 					&:not(:last-child) {
 						border-bottom: 1px solid $gray;
 					}
+					@include responsive(xl) {
+						gap: 32px;
+					}
+					@include responsive(md) {
+						flex-direction: column;
+						text-align: center;
+						gap: 24px
+					}
 					.subtext-text {
 						@include flex(row, center, space-between);
 						width: 1064px;
+						@include responsive(xl)
+						{
+							width: 100%;
+							gap: 32px;
+						}
+						@include responsive(md) {
+							@include flex(column, flex-start, space-between);
+							gap: 24px;
+						}
 						&-display {
 							color: $black;
 							font-family: $font-display;
@@ -22,6 +45,14 @@
 							line-height: 120%; /* 86.4px */
 							letter-spacing: -1.44px;
 							width: 552px;
+							@include responsive(xl)
+						{
+							width: 100%;
+							font-size: 52px;
+						}
+							@include responsive(sm) {
+								font-size: 32px;
+							} 
 						}
 						&-desc {
 							color: $gray;
@@ -31,10 +62,26 @@
 							line-height: 132%; /* 26.4px */
 							letter-spacing: -0.2px;
 							width: 433px;
+							@include responsive(xl)
+						{
+							width: 100%;
+						}
+							@include responsive(md) {
+								font-size: 16px;
+							}
 						}
 					}
                     .btn-icon {
                         transition: all 300ms ease;
+						@include responsive(xl) {
+							max-width: 82px;
+						}
+						@include responsive(md) {
+							max-width: 72px;
+						}
+						@include responsive(sm) {
+							max-width: 62px;
+						}
                     }
 					&:hover {
 						.btn-icon {
