@@ -16,7 +16,7 @@
 		background-size: cover;
 		background-position: 192px 60%;
 	}
-	@include responsive(md) {
+	@include responsive(lg) {
 		padding-top: 90px;
 		padding-bottom: 30px;
 	}
@@ -27,14 +27,14 @@
 		&-header {
 			position: relative;
 			.subtext {
-				@include responsive(md) {
+				@include responsive(lg) {
 					@include flex(column, flex-start,flex-start);
 					gap: 16px;
 				}
 				&-text {
 					@include flex(column, flex-start, space-between);
 					gap: 26px;
-					@include responsive(md){
+					@include responsive(lg){
 						gap: 16px;
 					}
 					&-display {
@@ -47,7 +47,7 @@
 						@include responsive(xl) {
 							font-size: 136px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							font-size: 104px;
 							letter-spacing: -4.84px;
 						}
@@ -57,7 +57,7 @@
 						}
 						.btn-icon {
 							margin-left: 62px;
-							@include responsive(md) {
+							@include responsive(lg) {
 								margin-left: 28px;
 							}
 							@include responsive(sm) {
@@ -68,7 +68,7 @@
 								@include responsive(xl) {
 									max-width: 92px;
 								}
-								@include responsive(md) {
+								@include responsive(lg) {
 									max-width: 74px;
 								}
 								@include responsive(sm) {
@@ -84,7 +84,7 @@
 						font-weight: 500;
 						line-height: 110%; /* 22px */
 						letter-spacing: 1px;
-						@include responsive(md) {
+						@include responsive(lg) {
 							font-size: 16px;
 						} 
 					}
@@ -102,7 +102,7 @@
 						@include responsive(xl) {
 							right: 126px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							position: relative;
 							top: 0;
 							right: 0;
@@ -117,7 +117,7 @@
 						@include responsive(xl) {
 							width: 628px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							width: 100%;
 							flex-direction: column;
 							gap: 16px;

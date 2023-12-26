@@ -1,6 +1,6 @@
 .section-feature {
 	padding-block: 100px;
-	@include responsive(md) {
+	@include responsive(lg) {
 		padding-block: 50px;
 	}
 	.container {
@@ -10,7 +10,7 @@
 				&-item {
 					@include flex(row, center, space-between);
 					padding-block: 60px;
-					@include responsive(md) {
+					@include responsive(lg) {
 						padding-block: 30px;
 					}
                     cursor: pointer;
@@ -20,7 +20,7 @@
 					@include responsive(xl) {
 						gap: 32px;
 					}
-					@include responsive(md) {
+					@include responsive(lg) {
 						flex-direction: column;
 						text-align: center;
 						gap: 24px
@@ -33,7 +33,7 @@
 							width: 100%;
 							gap: 32px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							@include flex(column, flex-start, space-between);
 							gap: 24px;
 						}
@@ -66,7 +66,7 @@
 						{
 							width: 100%;
 						}
-							@include responsive(md) {
+							@include responsive(lg) {
 								font-size: 16px;
 							}
 						}
@@ -76,7 +76,7 @@
 						@include responsive(xl) {
 							max-width: 82px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							max-width: 72px;
 						}
 						@include responsive(sm) {

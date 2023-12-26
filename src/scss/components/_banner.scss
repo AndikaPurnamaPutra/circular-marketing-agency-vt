@@ -7,7 +7,7 @@
 				width: 100%;
                 padding-block: 30px;
                 border-block: 1px solid $gray;
-				@include responsive(md) {
+				@include responsive(lg) {
 					@include flex(column, flex-start, space-between);
 						gap: 16px
 				}
@@ -17,7 +17,7 @@
 					@include responsive(xl) {
 						gap: 230px;
 					}
-					@include responsive(md) {
+					@include responsive(lg) {
 						width: 100%;
 						gap: unset;
 					}
@@ -28,7 +28,7 @@
 						font-weight: 500;
 						line-height: 110%; /* 26.4px */
 						letter-spacing: -0.48px;
-						@include responsive(md) {
+						@include responsive(lg) {
 							font-size: 20px;
 						}
 					}

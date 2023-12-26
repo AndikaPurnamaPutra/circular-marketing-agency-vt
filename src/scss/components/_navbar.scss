@@ -11,12 +11,12 @@
       @include flex(row, center, space-between);
       padding-block: 24px;
       transition: all 500ms ease;
-      @include responsive(md) {
+      @include responsive(lg) {
         padding-block: 12px;
       }
       .nav {
         &-menu {
-          @include responsive(md) {
+          @include responsive(lg) {
             position: absolute;
             top: 100%;
             left: 50%;
@@ -57,7 +57,7 @@
         &-logo {
           display: inline-flex;
           max-width: 145px;
-          @include responsive(md) {
+          @include responsive(lg) {
             max-width: 118px;
           }
         }
@@ -74,7 +74,7 @@
           text-transform: uppercase;
           border: transparent;
           background-color: transparent;
-          @include responsive(md) {
+          @include responsive(lg) {
             font-size: 0;
             display: block;
             background-image: url("../../../assets/image/menu.svg");

@@ -1,13 +1,13 @@
 .section-millestone {
     padding-block: 120px;
-	@include responsive(md) {
+	@include responsive(lg) {
 		padding-block: 60px;
 	}
 	.container {
 		&-millestone {
 			@include flex(column, center, center);
             gap: 160px;
-			@include responsive(md) {
+			@include responsive(lg) {
 				gap: 80px;
 			}
 			@include responsive(sm) {
@@ -20,7 +20,7 @@
 				align-items: center;
 				justify-content: center;
 				gap: 8px;
-				@include responsive(md) {
+				@include responsive(lg) {
 					grid-template-columns: repeat(2, 1fr);
 					gap: 24px;
 				}
@@ -67,7 +67,7 @@
 			.body-content {
 				@include flex(row, flex-start, center);
 				gap: 150px;
-				@include responsive(md) {
+				@include responsive(lg) {
 					gap: 75px;
 				}
 				@include responsive(sm) {
@@ -80,7 +80,7 @@
 					
 					@include flex(column, flex-start, flex-start);
 					gap: 120px;
-					@include responsive(md) {
+					@include responsive(lg) {
 						gap: 60px;
 						align-items: center;
 						text-align: center;
@@ -96,7 +96,7 @@
 						font-weight: 500;
 						line-height: 132%; /* 26.4px */
 						letter-spacing: -0.2px;
-						@include responsive(md) {
+						@include responsive(lg) {
 							font-size: 16px;
 						}
 					}
@@ -110,7 +110,7 @@
 						@include responsive(xl) {
 							font-size: 98px;
 						}
-						@include responsive(md) {
+						@include responsive(lg) {
 							font-size: 68px;
 						}
 					}
